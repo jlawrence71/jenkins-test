@@ -18,6 +18,7 @@ public class SeleniumTest {
 
   @Before
   public void setUp() throws Exception {
+	System.setProperty("webdriver.gecko,driver", "/Users/jameslawrence/Documents/geckodriver");
     driver = new FirefoxDriver();
     baseUrl = "http://store.demoqa.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
